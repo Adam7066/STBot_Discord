@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  discord-bot:
+    container_name: "DCBot"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    entrypoint: ["python3", "main.py"]
